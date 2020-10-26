@@ -3,6 +3,9 @@
     using System;
     using System.Runtime.Serialization;
 
+    /// <summary>
+    ///     Implementation based off of the reference PCG Random, found here: https://www.pcg-random.org/index.html
+    /// </summary>
     [Serializable]
     [DataContract]
     public sealed class PcgRandom : AbstractRandom, IEquatable<PcgRandom>, IComparable, IComparable<PcgRandom>
